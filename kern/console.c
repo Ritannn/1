@@ -191,7 +191,7 @@ cga_putc(int c)
 		break;
 	}
 
-	// What is the purpose of this?
+	// if one screen is full, up a row
 	if (crt_pos >= CRT_SIZE) {
 		int i;
 

@@ -93,4 +93,7 @@ bootstack:
 	.space		KSTKSIZE
 	.globl		bootstacktop   
 bootstacktop:
+#define KSTACKTOP	KERNBASE
+#define KSTKSIZE	(8*PGSIZE)
+#define KSTKGAP		(8*PGSIZE)
 
